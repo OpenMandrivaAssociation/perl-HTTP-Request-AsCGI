@@ -25,6 +25,7 @@ BuildRequires:	perl(HTTP::Response) >= 1.53
 BuildRequires:	perl(IO::File)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl-libwww-perl >= 5.805
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 
 %description
