@@ -2,7 +2,7 @@
 %define	name	perl-%{module}
 %define	modprefix HTTP
 %define	version	0.5
-%define	release	%mkrel 4
+%define	release	%mkrel 5
 
 Summary:	Setup a CGI enviroment from a HTTP::Request
 Name:		%{name}
