@@ -1,8 +1,8 @@
 %define	module	HTTP-Request-AsCGI
 %define	name	perl-%{module}
 %define	modprefix HTTP
-%define	version	0.5
-%define	release	%mkrel 7
+%define	version	0.9
+%define	release	%mkrel 1
 
 Summary:	Setup a CGI enviroment from a HTTP::Request
 Name:		%{name}
