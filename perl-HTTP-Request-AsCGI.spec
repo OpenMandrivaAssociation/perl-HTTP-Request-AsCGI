@@ -1,5 +1,5 @@
 %define	upstream_name	 HTTP-Request-AsCGI
-%define	upstream_version 0.9
+%define upstream_version 1.0
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Setup a CGI enviroment from a HTTP::Request
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
 
 # http://search.cpan.org/src/CHANSEN/HTTP-Request-AsCGI-0.5/META.yml:
 #     HTTP::Response:                1.53
@@ -31,20 +31,19 @@ Requires:	perl(Class::Accessor)
 This module provides a convenient way of setting up an CGI enviroment
 from an HTTP::Request object.
 
-
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make}
+%make
 
 %check
-%{__make} test
+%make test
 
 %install
 %{__rm} -rf %{buildroot}
-%{makeinstall_std}
+%makeinstall_std
 
 %clean 
 %{__rm} -rf %{buildroot}
