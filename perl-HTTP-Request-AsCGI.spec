@@ -8,7 +8,7 @@ Release:    4
 Summary:	Setup a CGI enviroment from a HTTP::Request
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_version}.tar.gz
 
 # http://search.cpan.org/src/CHANSEN/HTTP-Request-AsCGI-0.5/META.yml:
