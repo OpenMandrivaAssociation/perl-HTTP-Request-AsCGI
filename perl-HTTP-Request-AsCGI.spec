@@ -14,6 +14,7 @@ Source0:	http://www.cpan.org/modules/by-module/HTTP/%{upstream_name}-%{upstream_
 # http://search.cpan.org/src/CHANSEN/HTTP-Request-AsCGI-0.5/META.yml:
 #     HTTP::Response:                1.53
 # http://search.cpan.org/src/GAAS/libwww-perl-5.804/lib/HTTP/Response.pm = 1.52
+BuildRequires:	make
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(HTTP::Request)
